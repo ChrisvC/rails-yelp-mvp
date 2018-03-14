@@ -19,9 +19,9 @@
     <p><%= restaurant.phone_number  %></p>
   </li>
   <li>
-    <%= link_to "see tha thing", restaurant_path(restaurant.id), class: "btn btn-primary"  %>
-    <%= link_to "edit that!", edit_restaurant_path(restaurant.id), class: "btn btn-primary" %>
-    <%= link_to "me delete", restaurant ,method: :delete, class: "btn btn-primary" %>
+    <%= link_to "see your creation", restaurant_path(restaurant.id), class: "btn btn-primary"  %>
+    <%= link_to "edit that mate", edit_restaurant_path(restaurant.id), class: "btn btn-primary" %>
+    <%= link_to "delete me", restaurant ,method: :delete, class: "btn btn-primary" %>
 
   </li>
 </ul>
@@ -30,4 +30,4 @@
 
 <hr>
 
-<%= link_to "another, ANOTHER!", new_restaurant_path, class: "btn btn-primary" %>
+<%= link_to "Add another one!", new_restaurant_path, class: "btn btn-primary" %>

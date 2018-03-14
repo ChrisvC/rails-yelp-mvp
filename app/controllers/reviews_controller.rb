@@ -1,4 +1,4 @@
-class ReviewsController < ApplicationController
+class ReviewsController < ApplicationController # :nodoc:
   def new
     @restaurant = Restaurant.find(params[:restaurant_id])
     @review = Review.new
